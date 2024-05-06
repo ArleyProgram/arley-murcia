@@ -8,7 +8,6 @@ class program
 		int pp = 0;
 		int pv = 0;
 
-		//con esto intentamos hasta que unos de los jugadores gnae con 3 puntos
 		while (pp < 3 && pv < 3)
 		{
 			Console.WriteLine("elija piedra, papel, tijera, lagarto o spock");
@@ -19,16 +18,15 @@ class program
 				Console.WriteLine("Ups! solo puedes elegir entre piedra, papel, tijera, lagarto y spock");
 			}
 
-			//aqui eligira el jugador virtual
+			
 			String[] opciones = { "piedra", "papel", "tijera", "lagarto", "spock" };
 			int opcionaleatoria = rnd.Next(0, 5);
 			String evirtual = opciones[opcionaleatoria];
 
-			//resultados de las elecciones
+			
 			Console.WriteLine("tu elegiste " + eperson);
 			Console.WriteLine("el jugador virtual eligio " + evirtual);
 
-			//miramos quien gano
 			if (eperson == evirtual)
 			{
 				Console.WriteLine("Empate!!");
@@ -52,7 +50,7 @@ class program
 			Console.WriteLine();
 
 		}
-		//se muestra el ganador
+	
 		if (pp >= 3)
 		{
 			Console.WriteLine("has ganado");
